@@ -46,10 +46,12 @@ solve <- function(num=5){
         }
         sorted <- temp[order(-temp$count),]
         hundred <- head(sorted$word,100)
-        print(hundred)
         
         if(length(hundred)==0){
-            return("Sorry, No matching words")
+            print("Sorry, No matching words")
+        }
+        else{
+            print(hundred)
         }
         sol=sol+1
     }
