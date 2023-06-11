@@ -1,6 +1,10 @@
+install.packages("RCurl")
+install.packages("dplyr")
+library(RCurl)
+library(dplyr)
 solve <- function(num=5){
-    require("RCurl")
-    require("dplyr")
+    #require("RCurl")
+    #require("dplyr")
     download <- getURL("https://raw.githubusercontent.com/jparkgit/Solve-Wordle-with-R/main/words_with_count_df.csv")
     data <- read.csv(text = download)
 
