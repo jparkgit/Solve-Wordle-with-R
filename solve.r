@@ -2,6 +2,7 @@ install.packages("RCurl")
 install.packages("dplyr")
 library(RCurl)
 library(dplyr)
+
 solve <- function(num=5){
     #require("RCurl")
     #require("dplyr")
@@ -19,7 +20,8 @@ solve <- function(num=5){
 
     sol=1
     while(sol<=num){ 
-        word = readline('Enter word (control+c to quit anytime):')
+        word = readline('Enter word:')
+        if
         word=strsplit(word,"")
         word=word[[1]]
         while(length(word)!=5){
